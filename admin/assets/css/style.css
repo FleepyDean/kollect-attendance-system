@@ -204,7 +204,7 @@ table.table td h2 a:hover {
 	color: #009efb;
 }
 table.table td h2 span {
-	color: #9e9e9e;
+	color: #fcc032;
 	display: block;
 	font-size: 12px;
 	margin-top: 3px;
@@ -702,7 +702,7 @@ textarea.form-control {
 -----------------------*/
 
 .header {
-	background-color: #009efb;
+	background-color: white;
 	left: 0;
 	position: fixed;
 	right: 0;
@@ -727,7 +727,7 @@ textarea.form-control {
 	justify-content: center;
 }
 .logo span {
-	color: #fff;
+	color: #fcc032;
 	font-size: 18px;
 	font-weight: 500;
 	margin-left: 10px;
@@ -764,7 +764,7 @@ textarea.form-control {
 	z-index: 99;
 }
 .user-menu.nav > li > a {
-	color: #fff;
+	color: purple;
 	font-size: 16px;
 	line-height: 50px;
 	padding: 0 15px;
@@ -772,7 +772,7 @@ textarea.form-control {
 }
 .user-menu.nav > li > a:hover,
 .user-menu.nav > li > a:focus {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: purple;
 }
 .user-img {
 	display: inline-block;
@@ -889,7 +889,7 @@ textarea.form-control {
 	text-decoration: underline;
 }
 .mobile-user-menu {
-	color: #fff;
+	color: purple;
 	display: none;
 	font-size: 24px;
 	height: 50px;
@@ -903,11 +903,11 @@ textarea.form-control {
 	z-index: 10;
 }
 .mobile-user-menu > a {
-	color: #fff;
+	color: purple;
 	padding: 0;
 }
 .mobile-user-menu > a:hover {
-	color: #fff;
+	color: purple;
 }
 .mobile-user-menu > .dropdown-menu > a {
     line-height: 23px;
@@ -1673,7 +1673,7 @@ ul.chat-user-total li i.old-users {
 	height: 120px;
 	position: absolute;
 	width: 120px;
-	background: #fff;
+	background: purple;
 	overflow: hidden;
 }
 .profile-basic {
@@ -1705,7 +1705,7 @@ ul.chat-user-total li i.old-users {
 	padding: 5px;
 }
 .btn-text {
-	color: #fff;
+	color: purple;
 }
 
 /*-----------------
@@ -2869,7 +2869,7 @@ a.fc-event:not([href]) {
 	color: #333;
 }
 .user-menu.nav > li > a .badge {
-	color: #fff;
+	color: purple;
 	font-size: 60%;
 	font-weight: 700;
 	position: absolute;
@@ -4392,7 +4392,7 @@ blockquote p {
 
 @media only screen and (min-width: 991px) {
 	#toggle_btn {
-		color: #fff;
+		color: #fcc032;
 		float: left;
 		font-size: 20px;
 		line-height: 50px;
@@ -4580,7 +4580,7 @@ blockquote p {
 		margin-left: 0;
 	}
 	a.mobile_btn {
-		color: #fff;
+		color: #fcc032;
 		font-size: 24px;
 		height: 50px;
 		left: 0;
