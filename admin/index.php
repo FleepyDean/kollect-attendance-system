@@ -48,7 +48,7 @@ if(isset($_REQUEST['login']))
                 <img src="assets/img/eam-logo.png" alt="logo">
                 </div>
                 <div class="account-logo">
-                            <h3>KollectLog Manager</h3>
+                            <h2>KollectLog Manager</h2>
                         </div>
 				<div class="account-box">
                     <form method="post" class="form-signin">
