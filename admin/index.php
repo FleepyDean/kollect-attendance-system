@@ -44,11 +44,15 @@ if(isset($_REQUEST['login']))
     <div class="main-wrapper account-wrapper">
         <div class="account-page">
 			<div class="account-center">
+            <div class="login-logo">
+                <img src="assets/img/eam-logo.png" alt="logo">
+                </div>
+                <div class="account-logo">
+                            <h3>KollectLog Manager</h3>
+                        </div>
 				<div class="account-box">
                     <form method="post" class="form-signin">
-						<div class="account-logo">
-                            <h3>Employee Attendanace Management</h3>
-                        </div>
+						
                         <div class="form-group">
                             <label>Username</label>
                             <input type="text" autofocus="" class="form-control" name="username" required>

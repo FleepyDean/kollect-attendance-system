@@ -46,11 +46,17 @@ if(isset($_REQUEST['login']))
     <div class="main-wrapper account-wrapper">
         <div class="account-page">
 			<div class="account-center">
-				<div class="account-box">
-                    <form method="post" class="form-signin">
-						<div class="account-logo">
-                            <h3>Employee Attendance Management</h3>
+
+            <div class="login-logo">
+                <img src="assets/img/eam-logo.png" alt="logo">
+                </div>
+                <div class="account-logo">
+                            <h2>KollectLog</h2>
                         </div>
+				<div class="account-box">
+                
+                    <form method="post" class="form-signin">
+						
                         <div class="form-group">
                             <label>Username</label>
                             <input type="text" autofocus="" class="form-control" name="username" required>
@@ -64,7 +70,6 @@ if(isset($_REQUEST['login']))
                         <div class="form-group text-center">
                             <button type="submit" name="login" class="btn btn-primary account-btn">Login</button>
                         </div>
-                        
                     </form>
                 </div>
 			</div>

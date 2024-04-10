@@ -168,6 +168,10 @@ textarea.form-control {
 .list-group-item {
 	border: 1px solid #eaeaea;
 }
+.login-logo {
+	width: fit-content;
+	margin: auto;
+}
 
 /*-----------------
 	2. Table
@@ -433,16 +437,17 @@ table.table td h2 span {
 }
 .btn-primary {
 	border-color: transparent;
-	background-color: #009efb;
+	background-color: #60347d;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.active,
 .btn-primary:active,
 .open > .dropdown-toggle.btn-primary {
-	background-color: #009efb;
-	border: 1px solid #009efb;
-	color: #fff;
+	background-color: rgb(236, 176, 32);
+	border: 0px solid #009efb;
+	color: #60347d;
+	font-weight:bold;
 }
 .btn-primary.active.focus,
 .btn-primary.active:focus,
