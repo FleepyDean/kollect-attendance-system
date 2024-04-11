@@ -34,6 +34,7 @@ if(isset($_REQUEST['login']))
         $_SESSION['name'] = $name;
         $_SESSION['role'] = $role;
         $_SESSION['id'] = $id;
+        $_SESSION['employee_id'] = $employee_id;
         header('location:profile.php');
     }
     else

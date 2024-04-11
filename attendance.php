@@ -17,7 +17,7 @@ $empid = $emp['employee_id'];
 $dept = $emp['department'];
 
 $curr_date = date('Y-m-d');
-date_default_timezone_set('Asia/Kolkata'); 
+date_default_timezone_set('Asia/Kuala_Lumpur'); 
 $time = date('Y-m-d H:i:s');
 $intime = "";
 $outtime = "";
@@ -61,13 +61,22 @@ else
       
       $insert_query = mysqli_query($connection, "insert into tbl_attendance set employee_id='$emp_id', department='$department', shift='$shift', location='$location', message='$msg', date='$date',  check_in='$check_in', in_status='$in_status'");
 
+      if($insert_query) {
+        $check_in_query = mysqli_query($connection, "select check_in from tbl_attendance where employee_id='$empid' and date='$curr_date'");
+        $check_in_row = mysqli_fetch_array($check_in_query);
+        $check_in_time = $check_in_row['check_in'];
+    
+        $message = "Successfully clocked in at $check_in_time";
+      } else {
+        $message = "Clock in failed";
+      }
     }
 ?>
         <div class="page-wrapper">
             <div class="content">
                 <div class="row">
                     <div class="col-sm-4 ">
-                        <h4 class="page-title">Attendance Form</h4>
+                        <h4 class="page-title">Employee Attendance Form</h4>
                          
                     </div>
                     
@@ -115,7 +124,7 @@ else
                                
                     </div>
                             <div class="m-t-20 text-center">
-                                <button class="btn btn-primary submit-btn" name="turn-it"><img src="assets/img/login.png" width="40"> Turn It!</button>
+                                <button class="btn btn-primary submit-btn" name="turn-it"><img src="assets/img/login.png" width="40"> Clock In</button>
                             </div>
                         </form>
                     </div>
@@ -123,34 +132,46 @@ else
                     
                     $fetch_checkin = mysqli_query($connection,"select date from tbl_attendance where check_out='00:00:00' and employee_id='$empid'");
                     $rows = mysqli_num_rows($fetch_checkin);
+                    $check_in_time = $checkin_row['check_in'];
+
                     if($rows>0){
                     $data = mysqli_fetch_array($fetch_checkin);
                     $chekdate = $data['date'];
                     }
-                    if(isset($_REQUEST['check-out']))
-                    {
+                    if(isset($_REQUEST['check-out'])) {
                       $check_out = $time;
                       $insert_query = mysqli_query($connection, "update tbl_attendance set check_out='$check_out', out_status='$outtime' where employee_id='$empid' and date='$chekdate'");
-                       $checkout_status=0; 
-                    }
+                      $checkout_status = 0;
+                  
+                      if($insert_query) {
+                        $check_out_query = mysqli_query($connection, "select check_out from tbl_attendance where employee_id='$empid' and date='$curr_date'");
+                        $check_out_row = mysqli_fetch_array($check_out_query);
+                        $check_out_time = $check_out_row['check_out'];
+                    
+                        $message = "Successfully clocked out at $check_out_time";
+                      } else {
+                        $message = "Clock out failed";
+                      }
+                  }
                     ?>
                     
                    <div class="col-lg-12 offset-lg-2">
                        <div class="row">
                               <div class="col-sm-6">
-                    <center><h3>Thank You For Today</h3></center>
+                              <h3><center><?php echo isset($message) ? $message : $message; ?><center></h3>
                     <form method="post">
                      <div class="m-t-20 text-center">
                       <?php
                       $curr_date = date('Y-m-d');
                       $fetch_checkout = mysqli_query($connection,"select out_status from tbl_attendance where date='$curr_date' and employee_id='$empid'");
+                      $check_out_time = $checkout_row['check_out'];
                       $result = mysqli_fetch_array($fetch_checkout);
                       $result = $result['out_status'];
                       if($result=='' || $checkout_status==1){
                       ?>
-                                <button class="btn btn-primary submit-btn" name="check-out" onclick="return confirmDelete()"><img src="assets/img/login.png" width="40">  Check Out!</button>
+                                <button class="btn btn-primary submit-btn" name="check-out" onclick="return confirmDelete()"><img src="assets/img/clock.png" width="40">  Clock Out</button>
                       <?php  } else{?>
-                        <button disabled class="btn btn-primary submit-btn" name="check-out" onclick="return confirmDelete()"><img src="assets/img/login.png" width="40">  Done!</button>
+                        <button disabled class="btn btn-primary submit-btn" name="check-out" onclick="return confirmDelete()"><img src="assets/img/clock.png" width="40">  Done!</button>
                         <h5>See you tomorrow!</h5>
                       <?php } ?>
                               
@@ -169,7 +190,7 @@ else
 <?php
     include('footer.php');
 ?>
-<script language="JavaScript" type="text/javascript">
+<script>
 function confirmDelete(){
     return confirm('Are you sure want to check out now?');
 }

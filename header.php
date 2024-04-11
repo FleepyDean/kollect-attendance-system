@@ -65,7 +65,9 @@
                         <li>
                             <a href="attendance.php"><i class="fa fa-file-o"></i> <span>Attendance Form</span></a>
                         </li>
-                                                				                       
+                        <li>
+                            <a href="history.php"><i class="fa fa-file-o"></i> <span>History</span></a>
+                        </li>                        				                       
                     </ul>
                 
                 </div>
