@@ -20,10 +20,10 @@ $fetch_query = mysqli_query($connection, "SELECT tbl_attendance.date, tbl_attend
                     <tr>
                         <th>Date</th>
                         <th>Shift</th>
-                        <th>Check In</th>
+                        <th>Clock In</th>
                         <th>Notes</th>
                         <th>In Status</th>
-                        <th>Check Out</th>
+                        <th>Clock Out</th>
                         <th>Out Status</th>
                     </tr>
                 </thead>
