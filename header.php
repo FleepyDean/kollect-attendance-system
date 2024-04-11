@@ -22,7 +22,7 @@
 			<div class="header-left">
 				<a href="#" class="logo">
 					<img class="rounded-circle" src="assets/img/eam-logo.png" width="50" alt="Admin">
-                           <span>K.A.M</span>
+                           <span>KollectLog</span>
 				</a>
 			</div>
 			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -30,10 +30,10 @@
             <ul class="nav user-menu float-right">
                    <li class="nav-item dropdown has-arrow">
                     <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
-                        <span class="user-img">
+                        <!-- <span class="user-img">
 							<img class="rounded-circle" src="assets/img/user.jpg" width="24" alt="Admin">
 							<span class="status online"></span>
-						</span>
+						</span> -->
                         <?php
                         if(!empty($_SESSION['name']))
                             {?>
@@ -60,13 +60,13 @@
                     <ul>
                         
                         <li class="active">
-                            <a href="profile.php"><i class="fa fa-id-card-o"></i> <span>My Profile</span></a>
+                            <a href="profile.php"><i class="fa fa-id-badge"></i> <span>My Profile</span></a>
                         </li>
                         <li>
-                            <a href="attendance.php"><i class="fa fa-file-o"></i> <span>Attendance Form</span></a>
+                            <a href="attendance.php"><i class="fa fa-file-text"></i> <span>Attendance Form</span></a>
                         </li>
                         <li>
-                            <a href="history.php"><i class="fa fa-file-o"></i> <span>History</span></a>
+                            <a href="history.php"><i class="fa fa-history"></i> <span>History</span></a>
                         </li>                        				                       
                     </ul>
                 

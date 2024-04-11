@@ -768,7 +768,7 @@ textarea.form-control {
 	z-index: 99;
 }
 .user-menu.nav > li > a {
-	color: purple;
+	color: #60347d;
 	font-size: 16px;
 	line-height: 50px;
 	padding: 0 15px;
@@ -776,7 +776,7 @@ textarea.form-control {
 }
 .user-menu.nav > li > a:hover,
 .user-menu.nav > li > a:focus {
-	background-color: purple;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 .user-img {
 	display: inline-block;
@@ -1677,7 +1677,7 @@ ul.chat-user-total li i.old-users {
 	height: 120px;
 	position: absolute;
 	width: 120px;
-	background: purple;
+	background: transparent;
 	overflow: hidden;
 }
 .profile-basic {

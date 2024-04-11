@@ -1,5 +1,20 @@
 <?php
 session_start();
+
+
+//$res['password'] = "passwordField.textContent.length*3";
+
+
+
+// Function to mask the password
+function maskPassword($password) {
+    return str_repeat('*', strlen($password));
+}
+
+// Initial password setup
+$maskedPassword = maskPassword($res['password']);
+
+
 if(empty($_SESSION['name']))
 {
 	header('location:index.php');
@@ -48,6 +63,30 @@ $res = mysqli_fetch_array($fetch_data);
               </div>
             </div>
             <hr>
+            
+
+
+            <div class="row">
+    <div class="col-sm-3">
+        <p class="mb-0">Password</p>
+    </div>
+    <div class="col-sm-9">
+        <!-- Display the masked password with a data attribute for the original password -->
+        <p class="text-muted mb-0" id="passwordField" data-password="<?php echo htmlspecialchars($res['password']); ?>">
+            <?php echo htmlspecialchars($maskedPassword); ?>
+        </p>
+        <!-- Toggle button to show/hide password -->
+        <button onclick="togglePasswordVisibility()" class="toggle-btn"><a class="fa-lock"></a>Click Here</button>
+        
+        <!--<a class="toggle-btn" onclick="togglePasswordVisibility()"><i class="fa fa-lock"></i> <span>Click Here</span></a>
+-->      
+    </div>
+</div>
+
+
+
+
+            <hr>
             <div class="row">
               <div class="col-sm-3">
                 <p class="mb-0">Phone</p>
@@ -95,3 +134,21 @@ $res = mysqli_fetch_array($fetch_data);
  <?php 
  include('footer.php');
 ?>
+
+
+<script>
+function togglePasswordVisibility() {
+    var passwordField = document.getElementById('passwordField');
+
+    // Check if the type attribute is set
+    if (passwordField.getAttribute('data-visible') === 'true') {
+        // Mask the password
+        passwordField.textContent = '*'.repeat(passwordField.textContent.length*3);
+        passwordField.setAttribute('data-visible', 'false');
+    } else {
+        // Show the original password
+        passwordField.textContent = passwordField.getAttribute('data-password');
+        passwordField.setAttribute('data-visible', 'true');
+    }
+}
+</script>

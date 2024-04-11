@@ -172,6 +172,20 @@ textarea.form-control {
 	width: fit-content;
 	margin: auto;
 }
+.toggle-btn
+{
+	background-color: #60347d;
+	color: white;
+}
+.toggle-btn:hover,
+.toggle-btn:focus,
+.toggle-btn.active,
+.toggle-btn:active,
+.open > .dropdown-toggle.toggle-btn {
+	background-color: rgb(236, 176, 32);
+	color: #60347d;
+	
+}
 
 /*-----------------
 	2. Table
@@ -281,10 +295,10 @@ table.table td h2 span {
 	margin-bottom: 20px;
 }
 .page-title {
-	color: #565656;
+	color: #60347d;
 	font-size: 21px;
 	font-weight: normal;
-	margin-bottom: 20px;
+	margin-bottom: 17px;
 }
 .page-sub-title {
 	color: #565656;
@@ -769,7 +783,7 @@ textarea.form-control {
 	z-index: 99;
 }
 .user-menu.nav > li > a {
-	color: #fff;
+	color: #60347d;
 	font-size: 16px;
 	line-height: 50px;
 	padding: 0 15px;
@@ -1036,7 +1050,7 @@ textarea.form-control {
 
 .page-wrapper {
 	left: 0;
-	margin-left: 230px;
+	margin-left: 330px;
 	padding-top: 50px;
 	position: relative;
 	-webkit-transition: all 0.4s ease;

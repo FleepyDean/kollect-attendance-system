@@ -22,7 +22,7 @@
 			<div class="header-left">
                 <a href="dashboard.php" class="logo">
                     <img class="rounded-circle" src="assets/img/eam-logo.png" width="50" alt="Admin">
-                           <span>K.A.M</span>
+                           <span>KollectLog</span>
                 </a>
             </div>
 			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
@@ -30,10 +30,10 @@
             <ul class="nav user-menu float-right">
                    <li class="nav-item dropdown has-arrow">
                     <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
-                        <span class="user-img">
+                        <!-- <span class="user-img">
 							<img class="rounded-circle" src="assets/img/user.jpg" width="24" alt="Admin">
 							<span class="status online"></span>
-						</span>
+						</span> -->
                         <span>Admin</span>
                     </a>
 					<div class="dropdown-menu">

@@ -14,6 +14,7 @@ $fetch_query = mysqli_query($connection, "SELECT tbl_attendance.date, tbl_attend
 ?>
 <div class="page-wrapper">
     <div class="content">
+                <h1 class="page-title">Employee Attendance History</h1>
         <div class="table-responsive">
             <table class="datatable table table-stripped ">
                 <thead>
