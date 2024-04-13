@@ -61,12 +61,10 @@ include('includes/connection.php');
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <div class="edit-btn">
-                                                        <a class="dropdown-item" href="edit-employee.php?id=<?php echo $row['id'];?>"><i class="fa fa-pencil m-r-5"></i>Edit</a>
-                                                    </div>
-                                                    <div class="del-btn">
-                                                        <a class="dropdown-item" href="employees.php?ids=<?php echo $row['id'];?>" onclick="return confirmDelete()"><i class="fa fa-trash-o m-r-55"></i>Delete</a>
-                                                    </div>
+                                                        <a class="dropdown-item m-r-5" href="edit-employee.php?id=<?php echo $row['id'];?>"><i class="fa fa-pencil m-r-5"></i>Edit</a>
+                         
+                                                        <a class="dropdown-item m-r-55" href="employees.php?ids=<?php echo $row['id'];?>" onclick="return confirmDelete()"><i class="fa fa-trash-o m-r-55"></i>Delete</a>
+                                                    
                                                 </div>
                                             </div>
                                         </td>
