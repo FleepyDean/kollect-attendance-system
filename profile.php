@@ -3,7 +3,7 @@ session_start();
 
 
 //$res['password'] = "passwordField.textContent.length*3";
-
+$res['password'] = "";
 
 
 // Function to mask the password
