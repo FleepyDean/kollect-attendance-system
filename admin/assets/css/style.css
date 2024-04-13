@@ -172,6 +172,12 @@ textarea.form-control {
 	width: fit-content;
 	margin: auto;
 }
+.edit-btn{
+	color: lightblue;
+}
+.del-btn{
+	color: red;
+}
 /*-----------------
 	2. Table
 -----------------------*/
@@ -218,7 +224,12 @@ table.table td h2 span {
 -----------------------*/
 
 .m-r-5 {
-	margin-right: 5px !important;
+	margin-left: 10px !important;
+	color: #009efb;
+}
+.m-r-55 {
+	margin-right: 10px !important;
+	color: red;
 }
 .m-r-10 {
 	margin-right: 10px !important;
@@ -280,13 +291,13 @@ table.table td h2 span {
 	margin-bottom: 20px;
 }
 .page-title {
-	color: #565656;
+	color: #60347d;
 	font-size: 21px;
 	font-weight: normal;
 	margin-bottom: 20px;
 }
 .page-sub-title {
-	color: #565656;
+	color: #60347d;
 	font-size: 18px;
 	font-weight: normal;
 	margin-bottom: 20px;
@@ -757,7 +768,7 @@ textarea.form-control {
 	padding: 14px 20px;
 }
 .page-title-box h3 {
-	color: #fff;
+	color: #60347d;;
 	font-size: 18px;
 	font-weight: 500;
 	margin: 0;

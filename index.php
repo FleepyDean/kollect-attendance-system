@@ -6,8 +6,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Employee Attendance Management System</title>
-    <link rel="icon" href="assets/img/eam-logo.png"/>
+    <title>KollectLog</title>
+    <link rel="icon" href="assets/img/kollect-logo.ico" sizes="64x64" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
