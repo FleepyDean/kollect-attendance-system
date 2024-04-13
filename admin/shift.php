@@ -24,8 +24,8 @@ include('includes/connection.php');
                                     <thead>
                                         <tr>
                                             <th>ID</th>
-                                            <th>start time</th>
-                                            <th>end Time</th>
+                                            <th>Start Time</th>
+                                            <th>End Time</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
