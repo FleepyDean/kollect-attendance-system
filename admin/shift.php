@@ -49,7 +49,7 @@ include('includes/connection.php');
                                         <?php } else {?>
                                             <td><span class="custom-badge status-red">Inactive</span></td>
                                         <?php } ?>
-                                            <td class="text-right">
+                                            <td>
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">

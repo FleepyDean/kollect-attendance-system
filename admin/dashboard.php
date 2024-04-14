@@ -67,7 +67,6 @@ include('includes/connection.php');
                                         { ?>
 											<tr>
 												<td>
-													<img width="28" height="28" class="rounded-circle" src="assets/img/user.jpg" alt=""> 
 													<h2><?php echo $row['first_name']." ".$row['last_name']; ?></h2>
 												</td>
 												<td><?php echo $row['emailid']; ?></td>

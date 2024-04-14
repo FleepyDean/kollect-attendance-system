@@ -57,7 +57,7 @@ include('includes/connection.php');
                                                     <span class="custom-badge status-red">Inactive</span>
                                                 <?php } ?>
                                                 </td>
-                                            <td class="text-right">
+                                            <td>
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
