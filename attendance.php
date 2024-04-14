@@ -17,7 +17,7 @@ $empid = $emp['employee_id'];
 $dept = $emp['department'];
 
 $curr_date = date('Y-m-d');
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Asia/Kuala_Lumpur');
 $time = date('Y-m-d H:i:s');
 $intime = "";
 $outtime = "";
