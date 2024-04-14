@@ -68,7 +68,8 @@ $res = mysqli_fetch_array($fetch_data);
 
             <div class="row">
     <div class="col-sm-3">
-        <p class="mb-0">Password</p>
+        <p class="mb-0">Password</p>    
+        <button onclick="togglePasswordVisibility()" class="toggle-btn">Toggle</button>  
     </div>
     <div class="col-sm-9">
         <!-- Display the masked password with a data attribute for the original password -->
@@ -76,12 +77,13 @@ $res = mysqli_fetch_array($fetch_data);
             <?php echo htmlspecialchars($maskedPassword); ?>
         </p>
         <!-- Toggle button to show/hide password -->
-        <button onclick="togglePasswordVisibility()" class="toggle-btn">Toggle</button>
+        
         
         <!--<a class="toggle-btn" onclick="togglePasswordVisibility()"><i class="fa fa-lock"></i> <span>Click Here</span></a>
 -->      
     </div>
 </div>
+          
             <hr>
             <div class="row">
               <div class="col-sm-3">

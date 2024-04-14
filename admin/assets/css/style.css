@@ -636,6 +636,7 @@ table.table td h2 span {
 }
 .dropdown-action .dropdown-toggle:after {
 	display: none;
+	margin: auto;
 }
 .badge.badge-pill {
 	border-radius: 10rem;
@@ -1298,8 +1299,11 @@ ul.chat-user-total li i.old-users {
 	margin-top: -8px;
 }
 .bar-chart > .legend > .item.text-right:before {
-	right: 0;
+	right: 50px;
 	left: auto;
+	
+	
+
 }
 .bar-chart > .legend > .item h4 {
 	font-size: 13px;

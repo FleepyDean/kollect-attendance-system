@@ -101,9 +101,6 @@ include('includes/connection.php');
                                         ?>
                                     <li>
                                         <div class="contact-cont">
-                                            <div class="float-left user-img m-r-10">
-                                                <a href="profile.html" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
-                                            </div>
                                             <div class="contact-info">
                                                 <span class="contact-name text-ellipsis"><?php echo $row['first_name']." ".$row['last_name']; ?></span>
                                                 <span class="contact-date"><?php echo $row['department']; ?></span>
