@@ -110,7 +110,7 @@ include('includes/connection.php');
                                 </ul>
                             </div>
                             <div class="card-footer text-center bg-white">
-                                <a href="employees.php" class="text-muted">View all Employees</a>
+                                <a href="departments.php" class="text-muted">View all Departments</a>
                             </div>
                         </div>
                     </div>
