@@ -62,7 +62,7 @@ include('includes/connection.php');
 									<table class="table mb-0 new-patient-table">
 										<tbody>
 											<?php 
-											$fetch_query = mysqli_query($connection, "select * from tbl_employee where role=0 limit 5");
+											$fetch_query = mysqli_query($connection, "select * from tbl_employee where role=0 limit 10");
                                         while($row = mysqli_fetch_array($fetch_query))
                                         { ?>
 											<tr>
